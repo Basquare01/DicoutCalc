@@ -1,0 +1,78 @@
+*{
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    background-color: #bcc5bc;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 270px;
+}
+
+.title{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h4{
+    margin-bottom: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Price{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: #e4ece4;
+    font-size: 18px;
+}
+
+#Discounted{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: #e4ece4;
+    font-size: 18px;
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#Calculate{
+    padding: 12px 50PX;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(38, 38, 247);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#Discounted-Price, #You-Saved{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    display: block;
+}

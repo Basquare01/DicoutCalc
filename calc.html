@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calcuator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            Discout Calculator
+        </div>
+            <form class="inputs">
+                <h4>Original Price</h4>
+                <input type="text" id="Price" />
+                <h4>Discount Percentage</h4>
+                <input type="text" id="Discounted" />
+            </form>
+            <div id="btn">
+                <button id="Calculate">Calculate</button>
+            </div>
+        <div class="Discounted-Price">
+            
+           <span id="Discounted-Price">Discounted Price: N <span id="Main-Price"></span></span>
+
+           <span id="You-Saved">You Saved: N <span id="Amount-Saved"></span></span>
+        </div>
+        <div class="Saved">
+
+        </div>
+    </div>
+    <script>
+        let PD = document.querySelector('#Discounted')
+        let OR = document.querySelector('#Price')
+        let butn = document.querySelector('#Calculate')
+        let ansDisc = document.querySelector('#Main-Price')
+        let ansSaved = document.querySelector('#Amount-Saved');
+
+        butn.addEventListener('click', disp);
+
+        function disp(){
+        ansSaved.innerText = (OR.value  * PD.value) / 100 + '.00'
+        ansSaved.style.color = 'Blue'
+        ansDisc.innerText = OR.value - ansSaved.innerText + '.00'
+        ansDisc.style.color = 'Blue'
+        //   ansSaved.innerText = 
+        }
+    </script>
+</body>
+</html>
