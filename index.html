@@ -13,9 +13,9 @@
         </div>
             <form class="inputs">
                 <h4>Original Price</h4>
-                <input type="text" id="Price" />
+                <input type="text" id="Price" onfocus="value = ''"/>
                 <h4>Discount Percentage</h4>
-                <input type="text" id="Discounted" />
+                <input type="text" id="Discounted" onfocus="value = ''"/>
             </form>
             <div id="btn">
                 <button id="Calculate">Calculate</button>
@@ -40,9 +40,11 @@
         butn.addEventListener('click', disp);
 
         function disp(){
-        ansSaved.innerText = (OR.value  * PD.value) / 100 + '.00'
-        ansSaved.style.color = 'Blue'
-        ansDisc.innerText = OR.value - ansSaved.innerText + '.00'
+
+        ansSaved.innerText = (OR.value  * PD.value) / 100
+        ansSaved.style.color = 'Blue'    
+
+        ansDisc.innerText = OR.value - ansSaved.innerText
         ansDisc.style.color = 'Blue'
         //   ansSaved.innerText = 
         }
